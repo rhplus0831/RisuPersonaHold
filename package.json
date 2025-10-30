@@ -4,7 +4,7 @@
   "description": "TypeScript to JavaScript plugin builder",
   "main": "dist/index.js",
   "scripts": {
-    "build:js": "esbuild src/index.ts --bundle --platform=browser --target=es2022 --format=iife --minify --legal-comments=none --loader:.html=text --loader:.css=text --outfile=dist/index.js --define:process.env.NODE_ENV='\"production\"'",
+    "build:js": "esbuild src/index.ts --bundle --platform=browser --target=es2022 --format=iife --minify --legal-comments=none --loader:.html=text --loader:.css=text --outfile=dist/index.js",
     "build": "npm run build:js",
     "postbuild": "tsx scripts/add-headers.ts",
     "watch": "tsx scripts/watch.ts"
@@ -14,9 +14,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "buffer": "^6.0.3",
     "esbuild": "^0.25.11",
-    "isomorphic-git": "^1.34.0",
     "tsx": "^4.20.6"
   }
 }

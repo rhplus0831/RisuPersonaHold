@@ -1,4 +1,3 @@
-import {Buffer} from 'buffer';
 import {SlicedChat} from "./lib/database";
 import {useAutoPin} from "./lib/configure";
 export * from './lib/injection'
